@@ -1,0 +1,34 @@
+{
+	"name": "ansjabar/laravel-azure-calendar",
+	"description": "Add events to Azure Calendar using OAauth",
+    "keywords": ["laravel", "azure-calendar"],
+	"license": "MIT",
+	"authors": [
+        {
+            "name": "Ans Jabar",
+            "email": "ans.jabar@gmail.com"
+        }
+	],
+    "support": {
+        "issues": "https://github.com/ansjabar/laravel-azure-calendar/issues",
+        "source": "https://github.com/ansjabar/laravel-azure-calendar"
+    },
+	"require": {
+		"php": "^7.0|^8.0",
+        "league/oauth2-client": "^2.6",
+        "microsoft/microsoft-graph": "^1.83"
+	},
+	"require-dev": {
+		"ext-curl": "*"
+	},
+	"autoload": {
+		"psr-4": {
+			"AnsJabar\\LaravelAzureCalendar\\": "src/"
+		}
+	},
+	"extra": {
+		"laravel": {
+			"providers": [ "AnsJabar\\LaravelAzureCalendar\\CalendarServiceProvider" ]
+		}
+	}
+}
